@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    gap: 15px;
+}
+
+.wrapper .card{
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    background-color: #c873fd;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.wrapper:hover > :not(:hover){
+    filter: blur(5px);
+    opacity: .5;
+}
